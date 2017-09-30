@@ -1,0 +1,52 @@
+* {
+  font-size: 18px;
+  font-family: Times New Roman;
+}
+
+
+header h1 {
+  color: blue;
+  font-size: 36px;
+}
+footer a span, i {
+  color: green;
+  font-style: normal;
+
+}
+a:hover span, a:hover  {
+  color: gray;
+  font-weight: bold;
+}
+
+span.destacado{
+  color:navy;
+  font-weight: bold;
+
+}
+p a {
+  color:purple;
+}
+h1 {
+  color: orange;
+}
+b.destacado {
+  color: red;
+  font-style: italic;
+}
+footer span {
+  color: pink;
+  font-style:italic;
+}
+.imagen p {
+  color: red;
+  background-color: yellow;
+  font-style:italic;
+}
+
+article p:nth-child(even) {
+  background-color: yellow;
+}
+#japo {
+  color: fuchsia;
+  font-size: 24px;
+}
