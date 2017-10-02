@@ -2,14 +2,18 @@
   font-size: 18px;
   }
 header h1 {
-  color: red;
+  color: blue;
   font-size: 36px;
 }
 
-footer a span, i {
-   color: green;
+footer a span {
+  color: green;
+  font-style: normal;
+}
+i{
   font-family: courier;
   font-weight: bold;
+  color: green;
   font-style: normal;
 }
 a:hover span, a:hover  {
