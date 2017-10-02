@@ -41,6 +41,7 @@ footer span {
   color: red;
   background-color: yellow;
   font-style:italic;
+  font-family: courier;
 }
 
 article p:nth-child(even) {
@@ -49,4 +50,7 @@ article p:nth-child(even) {
 #japo {
   color: fuchsia;
   font-size: 24px;
+}
+p span {
+color: blue;
 }
