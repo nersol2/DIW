@@ -1,17 +1,17 @@
 * {
   font-size: 18px;
-  font-family: Times New Roman;
+  font-family: "Times New Roman";
 }
-
 
 header h1 {
   color: blue;
   font-size: 36px;
 }
+
 footer a span, i {
   color: green;
   font-style: normal;
-
+  font-family: courier;
 }
 a:hover span, a:hover  {
   color: gray;
