@@ -1,0 +1,60 @@
+* {
+  font-family: Arial;
+}
+
+p::first-letter{
+    color: red;
+  }
+p:first-child {
+  color:blue;
+}
+p::first-line {
+  color: green;
+}
+p:last-child	{
+  color: pink;
+}
+a {
+  color: navy;
+}
+a:link {
+  color: yellow
+}
+a:visited {
+  color: gray;
+}
+a:hover{
+  color: purple;
+}
+.negrita {
+  font-weight: bold;
+}
+#cursiva{
+  font-style: italic;
+}
+ p:nth-child(even) {
+  font-size: 15px;
+
+}
+p:nth-child(odd) {
+  font-size: 25px;
+}
+
+h1, h2 {
+  color: navy;
+}
+div > h1 {
+  color: red;
+}
+p::after {
+  content: "!!";
+}
+p::before{
+  content: "¡¡"
+}
+.form:focus {
+  color: blue;
+}
+.formu:required{
+  color:red;
+}
