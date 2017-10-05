@@ -1,0 +1,16 @@
+#cabecera {
+  padding:1em;
+}
+#menu {
+  padding: 0.5em;
+  margin: 0.4em;
+}
+#noticias, #patrocinadores, #principal, #secundario {
+  padding: 0.5px;
+}
+#pie {
+  padding: 0.5em 0em 0.5em 0em;
+}
+#articulo {
+  padding: 1em;
+}
