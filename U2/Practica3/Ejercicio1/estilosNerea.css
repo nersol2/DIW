@@ -1,0 +1,48 @@
+#cabecera {
+  padding:1em;
+}
+#menu {
+  padding: 0.5em;
+  margin: 0.4em;
+}
+#noticias, #patrocinadores, #principal, #secundario {
+  padding: 0.5px;
+}
+#pie {
+  padding: 0.5em 0em 0.5em 0em;
+  margin-top: 1em;
+}
+#articulo {
+  padding: 1em;
+}
+
+#patrocinadores {
+  padding-top: 1em;
+}
+
+img {
+  margin: 0.5em;
+}
+#cabecera,#menu,#lateral,#contenido,#contenido #principal,#contenido #secundario,#pie{
+  border:0px;
+}
+
+#menu {
+  border-bottom: 1px solid #004C99;
+}
+#noticias {
+  border: 1px solid #C5C5C5;
+}
+
+#patrocinadores {
+  border: 1px solid #CC6600;
+  border-style: dashed;
+}
+#contenido #secundario {
+    border: 1px solid #CC6600;
+}
+
+#pie {
+  border-top: solid #C5C5C5;
+  border-bottom: solid #C5C5C5;
+}
