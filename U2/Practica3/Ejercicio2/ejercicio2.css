@@ -3,7 +3,11 @@
   font-family: Verdana;
   font-size: 0.9em;
   line-height: 1.4em;
-  background-image: url(http://www.webdesignhot.com/wp-content/uploads/2014/07/Blue-Abstract-Design-Art-Background-Vector-Illustration.jpg);
+  
+}
+body {
+  background-image: url(fondo.jpg);
+  background-repeat: repeat;
 }
 h1{
   border: 1px solid white;
@@ -27,7 +31,7 @@ a:hover {
 }
 
 a { margin: 1em 0;
-  float: left;
+
   clear: left;
   text-decoration: none;
 }
@@ -37,23 +41,64 @@ a { margin: 1em 0;
   background: url(pdf.png) no-repeat left center;
   background-size: 20px;
   height: 20px;
+  float: left;
+}
+table,tr,td {
+  border: 2px solid black;
+  border-collapse: collapse;
 }
 
-img {
-width: 50px;
-height: 50px;
-margin: auto;
+tr:nth-child(even){
+background-color: grey;
 }
-td a:hover {
-  background-color: #FFFF66;
-  display: block;
-}
-table{
+table {
   text-align: center;
   margin: auto;
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
+  font-size: 15px;
+
 }
-td img{
+.tipos {
+  vertical-align: bottom;
+}
+td.html{
+  background-image: url('html.jpg');
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-position: left;
   text-align: right;
+
+}
+td.html:active {
+background: #FFFF66;
+background-image: url('html.jpg');
+background-size: 50px 50px;
+background-repeat: no-repeat;
+background-position: left;
+}
+td.css{
+  background-image: url('css.jpg');
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-position: left;
+  text-align: right;
+
+
+}
+td.css:active {
+background: #FFFF66;
+background-image: url('css.jpg');
+background-size: 50px 50px;
+background-repeat: no-repeat;
+background-position: left;
+
+}
+
+caption {
+  caption-side: bottom;
+  text-align: left;
+  font-style: italic;
+  font-size: 10px;
+
 }
