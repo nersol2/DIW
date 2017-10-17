@@ -2,7 +2,7 @@ div {
   margin-top: 10px;
 }
 div label{
-  width: 15%;
+  width: 12%;
   float: left;
 }
 input[text]{
@@ -12,4 +12,22 @@ input:focus {
   outline: inherit;
   border:1px solid violet;
   background-color: lightgray;
+}
+input, select, textarea{
+    border-radius: 5px;
+}
+textarea{
+   overflow : scroll;
+   height: 40px;
+}
+p{
+  font-style: italic;
+  border: 1px solid gray;
+  color: gray;
+}
+div.sexo label {
+  width: 100px;
+}
+label.sexo2{
+  margin-right:  40px;
 }

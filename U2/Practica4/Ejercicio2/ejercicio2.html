@@ -20,12 +20,20 @@
       <div>
         <label for="apellido">Apellido*:
         </label>
-        <input type="text" name="apellido" id="apellido" required="required" >
+        <input type="text" name="apellido" id="apellido" required="required" placeholder="Introduce su apellido:" >
       </div>
       <div>
         <label for="email">Email*:
         </label>
         <input type="email" name="email" id="email" required="required" >
+      </div>
+      <div class="sexo">
+        <label for="sexo">Sexo:
+        </label>
+          <label class="sexo2"> Hombre <input type="radio" name="sexo" id="sexo1" ></label>
+          <label class="sexo2">  Mujer <input type="radio" name="sexo" id="sexo2" ></label>
+          <br>
+
       </div>
       <div>
         <label for="fecha">Fecha nacimiento*:
@@ -42,13 +50,32 @@
           <option value="Alicante">Alicante</option>
       </select>
       </div>
+      <div>
+        <label for="poblacion">Poblacion:
+        </label>
+        <input type="text" name="poblacion" id="poblacion" placeholder="Introduce su poblacion:" >
+      </div>
+      <div>
+        <label for="telefono">Telefono:
+        </label>
+        <input type="number" name="telefono" id="telefono" >
+      </div>
+      <div>
+       Motivo inscripcion:
+        <br>
+        <textarea cols=100  name="inscripcion"></textarea>
+      </div>
+      <div>
+        Escoge el color de tu avatar:
+        <input type="color" name="color" id="color" >
+      </div>
       </fieldset>
       <fieldset>
         <legend>Creacion de usuario</legend>
         <div>
           <label for="usuario">Nombre de usuario*:
           </label>
-          <input type="text" name="usuario" id="usuario" required="required">
+          <input type="text" name="usuario" id="usuario" required="required" placeholder="Introduce su usuario:">
         </div>
       <div>
         <label for="contraseña">Contraseña*:
@@ -61,6 +88,16 @@
         <input type="password" name="contraseña" id="contraseña" required="required" maxlength="8" size="10" >
       </div>
       </fieldset>
+      <div>
+      <input type="checkbox" name="deseo" id="deseo1" >Deseo recibir copias de los mensajes del foro en mi correo electronico
+      </div>
+      <div>
+      <input type="checkbox" name="deseo" id="deseo2" >Deseo recibir notificaciones de proximos eventos en mi correo electronico
+      </div>
+      <div>
+        <input type="submit" name="confirmacion" value="Confirmar registro">
+      </div>
+      <p> Nota los campos marcados con "*" son obligatorios</p>
       </fieldset>
     </form>
   </body>
