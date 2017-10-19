@@ -1,0 +1,23 @@
+img{
+    float: left;
+    padding-right: 18px;
+    padding-left: 18px;
+    padding-bottom: 18px;
+    width: 200px;
+    height: 200px;
+  }
+.izquierda{
+    float:left;
+    margin: 2px;
+  }
+.derecha{
+    float:right;
+    text-align: right;
+    margin: 2px;
+  }
+#footer{
+    border: 1px solid grey;
+    padding-bottom: 30px;
+    background-color:lightgrey;
+
+  }
