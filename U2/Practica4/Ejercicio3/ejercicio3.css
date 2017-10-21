@@ -1,0 +1,25 @@
+ul{
+       list-style: none;
+       background-color: lightgrey;
+       border: 1px solid grey;
+       width: 180px;
+       padding: 0px;
+       margin: 0px;
+     }
+     li{
+       border-top: 1px solid grey;
+       border-bottom: 1px solid grey;
+
+     }
+     li a{
+       text-decoration: none;
+       color: black;
+       padding: 5px 0px 5px 15px;
+       display: block;
+     }
+     li ul{
+       display: none;
+     }
+     li:hover ul{
+       display:block;
+     }
