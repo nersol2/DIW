@@ -1,6 +1,5 @@
 ul{
        list-style: none;
-       background-color: lightgrey;
        border: 1px solid grey;
        width: 180px;
        padding: 0px;
@@ -19,7 +18,32 @@ ul{
      }
      li ul{
        display: none;
+       list-style: square;
+       color: green;
+       width: 150px;
+       padding-left: 25px;
+       margin: auto;
      }
      li:hover ul{
        display:block;
      }
+     .lista:hover{
+       color:green;
+       background-color: lightgrey;
+     }
+  /*li ul{
+             display: none;
+             list-style: square;
+             color: green;
+             width: 154px;
+             padding-left: 25px;
+             margin: auto;
+             border-top: 0px;
+             /*background-image: url("https://ingrihernandezcds.files.wordpress.com/2014/04/clip-de-flecha-hacia-abajo-de-color-verde-arte_429041.jpg") ;*/
+             /*background-repeat: no-repeat;*/
+             /*background-size: 10px;*/
+           }
+           /*.sub:hover{
+             background-color: lightgrey;
+             color: green;
+           }*/
