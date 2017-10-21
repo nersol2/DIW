@@ -1,10 +1,9 @@
 img{
     float: left;
-    padding-right: 18px;
-    padding-left: 18px;
-    padding-bottom: 18px;
+    padding: 18px;
     width: 200px;
     height: 200px;
+    clear: left;
   }
 .izquierda{
     float:left;
@@ -12,12 +11,11 @@ img{
   }
 .derecha{
     float:right;
-    text-align: right;
     margin: 2px;
   }
 #footer{
     border: 1px solid grey;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
     background-color:lightgrey;
 
   }
