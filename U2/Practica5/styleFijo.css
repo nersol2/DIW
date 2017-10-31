@@ -51,6 +51,9 @@ nav ul {
   float:right;
   text-align: right;
 }
+nav li:hover{
+  color: aqua;
+}
 nav li {
   background-color: steelblue;
   color: linen;
@@ -63,6 +66,9 @@ nav li {
 li ul {
   display:none;
 }
+li:hover {
+  color: red;
+}
 li:hover ul{
   width: 180px;
   display: block;
@@ -70,7 +76,6 @@ li:hover ul{
   padding-left: 20px;
   color: steelblue;
   font-weight: bold;
-
 }
 article h1 {
   font-size: 24px;
