@@ -6,11 +6,16 @@
 
 body{
   text-align: center;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 
 }
 .contenedor{
     margin: auto;
     width: 960px;
+    padding-top: 120px;
+      flex: 1;
 }
 
 header {
@@ -19,6 +24,8 @@ header {
   display: table;
   height: 80px;
   padding: 10px;
+position: fixed;
+
 
 }
 header h1{
@@ -26,30 +33,45 @@ header h1{
   text-align: left;
   display: table-cell;
   padding-left: 5px;
+  font-size: 36px;
+  font-family: Helvetica;
+  font-weight: bold;
 }
 header img {
   height: 80px;
-  /*padding: 10px 10px 10px 10px;*/
-  /*vertical-align: middle;*/
   display: table-cell;
-  margin: 30px -40px 30px 30px;
-
 }
-header ul {
-  /*display: table;*/
-  float: right;
-  height: 100px;
+nav {
+  display: table-cell;
+  vertical-align: top;
+  text-align: right;
 }
-header li {
+nav ul {
+  list-style: none;
+  float:right;
+  text-align: right;
+}
+nav li {
   background-color: steelblue;
   color: linen;
-  padding: 7px;
-  list-style-type: none;
-  display:inline-table;
-  margin-right: 10px;
+  padding: 5px;
+  display:inline-block;
+  margin: 5px;
   font-weight: bold;
+  text-align: right;
 }
+li ul {
+  display:none;
+}
+li:hover ul{
+  width: 180px;
+  display: block;
+  margin-left: 60px;
+  padding-left: 20px;
+  color: steelblue;
+  font-weight: bold;
 
+}
 article h1 {
   font-size: 24px;
   font-family: Verdana;
@@ -60,35 +82,50 @@ article h2 {
   font-family: Verdana;
   font-weight: bold;
 }
-aside {
-  padding-right: 30px;
-}
+
 aside ul{
   background-color: lightgray;
   list-style-type: none;
   float:right;
-  width: 200px;
+  width: 230px;
   text-align: left;
-  padding: 20px 20px 20px 20px;
-  margin: 5px;
+  padding: 15px 15px 15px 15px;
 
 }
 section .primero{
-  width: 600px;
+  width: 700px;
   background-color: #FAEBD7;
   border: 5px solid lightgray;
-  margin-left: 50px;
+  text-align: left;
+  padding: 30px 20px 20px 20px;
+}
+section .segundo{
+  width: 700px;
+  background-color: #FAEBD7;
+  border: 5px solid lightgray;
   margin-top: 5px;
   text-align: left;
   padding: 10px;
+  margin-bottom: 30px;
+  padding: 30px 20px 20px 20px;
 }
 
-section .segundo{
-  width: 600px;
-  background-color: #FAEBD7;
-  border: 5px solid lightgray;
-  margin-left: 50px;
-  margin-top: 5px;
-  text-align: left;
+img {
+  padding-left: 10px;
+}
+figcaption {
+  font-style: italic;
+}
+.hora {
+  color: gray;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+section footer {
+  text-align: right;
+}
+footer {
+  width: 100%;
   padding: 10px;
+  text-align: center;
 }
