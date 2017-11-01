@@ -94,7 +94,7 @@ aside ul{
 section .primero{
   width: 70%;
   background-color: #FAEBD7;
-  border: 0.5% solid lightgray;
+  border: 5px solid lightgray;
   text-align: left;
   padding: 3% 2% 2% 2%;
   margin-left: 5%;
@@ -103,7 +103,7 @@ section .primero{
 section .segundo{
   width: 70%;
   background-color: #FAEBD7;
-  border: 0.5% solid lightgray;
+  border: 5px solid lightgray;
   margin-top: 0.5%;
   text-align: left;
   padding: 1%;
