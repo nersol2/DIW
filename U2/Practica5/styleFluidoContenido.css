@@ -69,14 +69,6 @@ li ul {
 li:hover {
   color: red;
 }
-/*li:hover ul{
-  width: 180px;
-  display: block;
-  margin-left: 60px;
-  padding-left: 20px;
-  color: steelblue;
-  font-weight: bold;
-}*/
 article h1 {
   font-size: 24px;
   font-family: Verdana;
