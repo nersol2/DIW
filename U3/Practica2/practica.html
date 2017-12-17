@@ -3,11 +3,11 @@
   <head>
     <title>Practica</title>
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="manifest.json">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
 
     <!-- Fuente de texto -->
@@ -19,7 +19,7 @@
 
     <style media="screen">
     body{
-      background-color: white;
+      background-color: pink;
       font-family: 'Open Sans', sans-serif;
     }
     .cabecera{
@@ -47,11 +47,28 @@
     .correo{
       text-align: left;
       padding-left: 60px;
+      padding-bottom: 50px;
     }
     .telefono{
       text-align: left;
       padding-left: 60px;
     }
+    .quiensomos{
+     border-right: 2px solid black;
+
+   }
+   p{
+     padding-top: 50px;
+   }
+
+   @media(min-width: 0px) and (max-width: 767px){
+  .quiensomos{
+
+    border-bottom: 2px solid black;
+    border-right: none;
+  }
+}
+
     </style>
   </head>
   <body>
@@ -67,7 +84,14 @@
         </div>
       </div>
       <div class="row">
-        <div class="w-100"><img src="gyp.jpg" width="100%" height="300px"></div>
+        <div class="imagen w-100">
+          <picture>
+          <source media="(min-width: 992px)" srcset="grande.jpg">
+          <source media="(min-width: 576px)" srcset="mediano.jpg">
+          <source media="(min-width: 0px)" srcset="pequeño.jpg">
+            <img src="gyp.jpg" width="100%" height="300px">
+          </picture>
+        </div>
       </div>
       <br>
       <div class="row">
@@ -75,18 +99,18 @@
       </div>
       <br><br>
       <div class="informacion row">
-        <div class="conocenos col-xl-6 col-lg-6 col-md-6">
+        <div class="quiensomos col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
           <h2>Conocenos</h2>
           <img src="goku.png" width="150" height="150">
           <p>Hola soy Goku, el dueño del refugio de animales, ven a ver a nuestros animales y adopta uno.</p>
         </div>
-        <div class="contacta col-xl-6 col-lg-6 col-md-6">
+        <div class="contacta col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
           <h2>Contacta con nosotros</h2>
           <div class="correo">
-            <img src="email_opt.svg" width="120px" /> Escribe a <a href="mailto:nerearodriguez24@gmail.com">nerearodriguez24@gmail.com<a>
+            <img src="correo_opt.svg" width="120px" /> Escribe a <a href="mailto:nerearodriguez24@gmail.com">nerearodriguez24@gmail.com<a>
           </div>
           <div class="telefono">
-            <img src="telefono_opt.svg" width="100px" /> Llama al <a href="tel:555-125-125">555-125-125<a>
+            <img src="tlf_opt.svg" width="100px" /> Llama al <a href="tel:555-125-125">555-125-125<a>
           </div>
         </div>
       </div>
