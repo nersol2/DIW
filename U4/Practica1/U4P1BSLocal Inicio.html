@@ -125,6 +125,16 @@
         animation-duration: 6s;
         animation-iteration-count: 5;
       }
+      @keyframes animacion2 {
+        0% {color: blue; font-weight: normal;}
+        50%  {color: aqua; font-weight: bold;}
+        100% {color: blue; font-weight: normal;}
+      }
+      .anim2 {
+        animation-name: animacion2;
+        animation-duration: 4s;
+        animation-iteration-count: 2;
+      }
     </style>
 </head>
 
@@ -191,7 +201,7 @@
               <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12">
                   <section class="row">
                     <article>
-                      <h1><i class="icon-novedades"></i>Novedades</h1>
+                      <h1 class="anim2"><i class="icon-novedades"></i>Novedades</h1>
                       <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper mauris nisl, ac euismod erat dictum
                           vel. Nunc lobortis, lectus vitae pulvinar pellentesque, eros sapien posuere lacus, et eleifend risus
@@ -206,7 +216,7 @@
                       </p>
                     </article>
                     <article>
-                      <h1><i class="icon-estudios"></i>Estudios ofertados</h1>
+                      <h1 class="anim2"><i class="icon-estudios"></i>Estudios ofertados</h1>
                       <p>DAW y ASIR son dos de los estudios ofertados en los que aprenderás...</p>
                       <figure>
                         <img class="anim1" src="css3.svg" alt="logo css3">
@@ -214,7 +224,7 @@
                       </figure>
                   </article>
                   <article>
-                    <h1><i class="icon-contactar"></i>Contactar</h1>
+                    <h1 class="anim2"><i class="icon-contactar"></i>Contactar</h1>
                     <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper mauris nisl, ac euismod erat dictum
                         vel. Nunc lobortis, lectus vitae pulvinar pellentesque, eros sapien posuere lacus, et eleifend risus
