@@ -59,7 +59,7 @@
         display: block;
         width: 100%
       }
-     a i {
+     /* a i {
      color: #fff;
      width: 30px;
      height: 25px;
@@ -77,7 +77,7 @@
  a:hover{
       text-decoration: none;
       color: aqua;
- }
+ } */
     .fa-facebook {
        background:#3b5998;
      }
@@ -111,7 +111,80 @@
     top:0px;
     left:0px;
 }
+.social {
+      	position: fixed;
+      	left: -35px;
+      	top: 230px;
+      	z-index: 2000;
+      }
+      .social ul li {
+          list-style-type: none;
+          padding-top: 5px;
+      }
+      .social ul li a i {
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+        text-align: center;
+        margin-right: 10px;
+        padding-top: 15%;
+        transition: all 0.2s ease-in-out;
+      }
+      .social i.fa{
+        font-size: 1.2rem;
+      }
+      .social ul li a i:hover {
+         background: white;
+         color: black;
+     }
+     .mute{
+       background: url('./iconos/spriteAudio.png') no-repeat -1px -1px;
+       width: 128px;
+       height: 128px;
+       display: inline-block;
+     }
+     .menosVol{
+       width: 128px;
+       height: 128px;
+       background: url("./iconos/spriteAudio.png") no-repeat -513px -1px;
+       display: inline-block;
+     }
+     .masVol{
+       width: 128px;
+       height: 128px;
+       background: url("./iconos/spriteAudio.png") no-repeat -257px -1px;
+       display: inline-block;
+     }
+     .play{
+       background: url("./iconos/spriteAudio.png") no-repeat -769px -1px;
+       width: 127px;
+       height: 127px;
+       display: inline-block;
+     }
+     .stop{
+       background: url("./iconos/spriteAudio.png") no-repeat -1024px -1px;
+       width: 129px;
+       height: 129px;
+       display: inline-block;
+     }
+     .mute:hover, .menosVol:hover, .masVol:hover, .stop:hover, .play:hover{
+       opacity: 0.7;
+     }
+     .botonera span{
+       margin: 10px;/* Dejamos una separación entre los enlaces */
+     }
     </style>
+    <script type="text/javascript">
+      function mute(){
+        var sonido = document.getElementById('player').muted;
+        if (sonido === true){
+          document.getElementById('player').muted = false;
+        }else{
+          document.getElementById('player').muted = true;
+        }
+      }
+    </script>
 </head>
 
 <body>
@@ -180,11 +253,18 @@
                       <h1><i class="icon-novedades"></i>Novedades</h1>
                       <p>Conoce la nueva emisora de nuestro instituto en la que podrás solicitar temas como el siguiente:</p>
                       <div>
-                        <audio controls="controls"  preload="auto" >
+                        <audio id="player" >
                           <source src="audio/melendi.ogg" type="audio/ogg">
                           <source src="audio/melendi.mp3" type="audio/mpeg"/>
                         </audio>
                       </div>
+                      <div class="botonera">
+                          <span class="play" onclick="document.getElementById('player').play()"></span>
+                          <span class="menosVol" onclick="document.getElementById('player').volume-=0.1"></span>
+                          <span class="masVol" onclick="document.getElementById('player').volume+=0.1"></span>
+                          <span class="mute" onclick="mute()"></span>
+                          <span class="stop" onclick="document.getElementById('player').pause()"></span>
+                        </div>
                       <p>Si lo prefieres, sigue nuestro canal de Youtube donde emitiremos cada semana, el video del tema más demandado. El video de esta semana es el siguiente:
                       </p>
                       <div class="videoIframe">
@@ -230,12 +310,20 @@
       <footer class="w-100 bg-dark text-center">
         <p class="text-white">Diseño de interfaces web: Bootstrap &copy;</p>
 
-        <a href="#Linkedin" target="_blank"><i class="fa fa-linkedin"></i>Linkedin</a>
+        <!-- <a href="#Linkedin" target="_blank"><i class="fa fa-linkedin"></i>Linkedin</a>
         <a href="#Twitter" target="_blank"><i class="fa fa-twitter"></i>Twitter</a>
         <a href="#Facebook" target="_blank"><i class="fa fa-facebook"></i>Facebook</a>
-        <a href="#Telegram" target="_blank"><i class="fa fa-telegram"></i>Telegram</a>
+        <a href="#Telegram" target="_blank"><i class="fa fa-telegram"></i>Telegram</a> -->
 
       </footer>
+      <div class="bg-dark social">
+     <ul>
+         <li><a href="http://facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+         <li><a href="http://linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+         <li><a href="http://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+         <li><a href="http://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i> </a></li>
+     </ul>
+   </div>
     </div>
   </div>
 </body>
