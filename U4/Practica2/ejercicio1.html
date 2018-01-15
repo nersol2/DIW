@@ -40,15 +40,15 @@ margin-top: 8px;
 <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
 <script>
 $(document).ready(function(){
-    $(document.getElementsByTagName("p")[0]).addClass("rojo");
-    $(document.getElementsByTagName("p")[1]).addClass("verde");
+    $("p:nth-child(2)").addClass("rojo");
+    $("p:nth-child(3)").addClass("verde");
     $('p span:first-child').addClass("italica");
-    $(document.getElementsByTagName("p")[2]).addClass("rojo").addClass("fondogris");
-    $(document.getElementsByTagName("div")[1]).addClass("rojo")
+    $("p:nth-child(4)").addClass("rojo").addClass("fondogris");
+    $("div:nth-child(8)").addClass("rojo")
     $('div span:first-child').addClass("negrita");
-    $(document.getElementsByTagName("div")[2]).addClass("verde").addClass("fondogris");
-    $(document.getElementsByTagName("div")[4]).addClass("azul");
-    
+    $("div:nth-child(9)").addClass("verde").addClass("fondogris");
+    $("div:nth-child(11)").addClass("azul");
+
 
 
 });
