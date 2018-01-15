@@ -8,6 +8,13 @@ $(document).ready(function() {
   $("img").width(400);
   $("div").css("text-align","center");
   $("h1").css({"color":"blue","text-align":"center"});
+  $("img, button").hide();
+  $("h1").click(function(){
+  $("img, button").slideToggle('slow');
+  $("h1").slideToggle('slow', function(){
+    
+  })
+  })
 });
 
 </script>
