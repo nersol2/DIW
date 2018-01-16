@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+<script>
+
+$(document).ready(function() {
+  $("div").css("text-align","center");
+  $("img").css("width","150");
+       $("img:nth-child(1)").hide();
+       var imagen = true;
+       $("#bombilla").click(function(){
+         if(imagen){
+             imagen = false;
+             $("img:nth-child(2)").hide();
+             $("img:nth-child(1)").show();
+             $("#bombilla").text("Apagar bombilla");
+         }else{
+            imagen = true;
+             $("img:nth-child(2)").show();
+             $("img:nth-child(1)").hide();
+             $("#bombilla").text("Encender bombilla");
+         }
+       });
+});
+
+
+
+</script>
+<style media="screen">
+
+</style>
+</head>
+<body>
+<div class="contenedor">
+<img src="encendida.png">
+<img src="apagada.jpg">
+<button id="bombilla">Encender bombilla</button>
+</div>
+</body>
+</html>
