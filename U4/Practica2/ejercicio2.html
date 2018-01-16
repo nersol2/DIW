@@ -9,13 +9,27 @@ $(document).ready(function() {
   $("div").css("text-align","center");
   $("h1").css({"color":"blue","text-align":"center"});
   $("img, button").hide();
+  var imagen = true;
   $("h1").click(function(){
-  $("img, button").slideToggle('slow');
-  $("h1").slideToggle('slow', function(){
-    
-  })
-  })
+    if (imagen) {
+        $("img, button").slideToggle();
+        $("h1").html("Haz click aqui para ocultar la imagen!");
+        imagen = false;
+    } else {
+      $("img, button").slideToggle();
+        $("h1").html("Haz click aquí para desplegar la imagen!");
+        imagen = true;
+    }
+  });
+  $("#masAncho").click(function(){
+    $("img").width($("img").width()*1.2);
+  });
+  $("#menosAncho").click(function(){
+    $("img").width($("img").width()/1.2);
+  });
 });
+
+
 
 </script>
 <style media="screen">
