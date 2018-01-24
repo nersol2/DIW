@@ -53,7 +53,7 @@ a {
 }
 
 a:hover {
-	color: #e4ffff;  border-bottom: 1px solid #003366;
+	color: #e4ffff; background: #18001c; border-bottom: 1px solid #003366;
 }
 
 img{
