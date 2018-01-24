@@ -49,11 +49,11 @@ p span{
 }
 
 a {
-	color: ##aa00bf; text-decoration: none; border-bottom: 1px dotted #598eff;
+	color: #598eff; text-decoration: none; border-bottom: 1px dotted #598eff;
 }
 
 a:hover {
-	color: #dbffff; background: #CCCCCC; border-bottom: 1px solid #003366;
+	color: #003366; background: #CCCCCC; border-bottom: 1px solid #003366;
 }
 
 img{
