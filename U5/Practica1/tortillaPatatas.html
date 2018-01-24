@@ -1,10 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>Recetas </title>
+    <title>Las recetas de la abuela</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="estilo.css">
-
+    <style media="screen">
+      a{
+        border-bottom: none;
+      }
+      table{
+        margin: auto;
+        width: 450px;
+      }
+      td {
+        border: 1px solid black;
+        text-align: center;
+      }
+      th{
+        border: 1px solid black;
+        text-align: center;
+      }
+      .imagen{
+        border: 0px;
+      }
+      .imagen2{
+        width: 250px;
+        height: 200px;
+      }
+      iframe{
+        width: 560px;
+        height: 315px;
+        align: middle;
+      }
+      .noborde{
+        border: 0px;
+      }
+    </style>
   </head>
   <body>
     <div id="titulo">
@@ -13,97 +44,51 @@
         <p>Como en casa en ningún sitio!</p>
       </div>
       <div id="logo">
-        <a href="http://canalcocina.es/cocinero/dolores-valcarcel-la-abuela-lolita"><img src="logo.png" alt="logo de la página"></a>
+      <a href="webRecetasNoAccesible.html"><img src="logo.png" alt="logo de la página web"></a>
       </div>
     </div>
-    <h2 class="oculta">Menu navegación</h2>
-    <div id="navegacion">
-      <ul>
-	       <li><a href="ejercicio.html#presentacion" class="presentacion">Presentación</a></li>
-	       <li><a href="ejercicio.html#primeros" class="primeros">Primer plato</a></li>
-	       <li><a href="ejercicio.html#segundos" class="segundos">Segundo plato</a></li>
-	       <li><a href="ejercicio.html#postres" class="postres">Postre</a></li>
-       </ul>
-     </div>
-<!-- Inicio de contenido -->
 <div id="contenido">
-  <div id="tortilla">
-    <h2>Tortilla de patatas con cebolla</h2>
-    <img src="tortilla.jpg" alt="fotografía de una tortilla"><br><br>
-<table summary="ingredientes de la tortilla para 4 personas">
-  <tr>
-    <th> Ingredientes </th>
-    <th> Cantidad </th>
-  </tr>
-  <tr>
-    <td> Huevos </td>
-    <td> 5 </td>
-  </tr>
-  <tr>
-    <td> Patatas </td>
-    <td> 3 </td>
-  </tr>
-  <tr>
-    <td> Cebolla </td>
-    <td> 1 </td>
-  </tr>
-  <tr>
-    <td> Sal </td>
-    <td> 3 cucharadas </td>
-  </tr>
-  <tr>
-    <td> Aceite</td>
-    <td> Lo suficiente para freir las patatas </td>
-  </tr>
-</table> </br>
-
-<p> Pela y pica la cebolla en dados medianos. Limpia el pimiento verde, retírale el tallo y las pepitas y córtalo en dados.
-
-Si las patatas estuvieran sucias, pásalas por agua. Pélalas, córtalas por la mitad a lo largo y después corta cada trozo en medias lunas finas de 1/2 centímetros.
-
-Introduce todo en la sartén, sazona a tu gusto y fríe a fuego suave durante 25-30 minutos.
-
-Retira la fritada y escúrrela. Pasa el aceite a un recipiente y resérvalo. Limpia la sartén con papel absorbente de cocina.
-
-Casca los huevos, colócalos en un recipiente grande y bátelos. Sálalos a tu gusto, agrega la fritada de patatas, cebolla y pimiento y mezcla bien.
-
-Coloca la sartén nuevamente en el fuego, agrega un chorrito del aceite reservado y agrega la mezcla. Remueve un poco con una cuchara de madera y espera (20 segundos) a que empiece a cuajarse.
-
-Separa los bordes, cubre la sartén con un plato de mayor diámetro que la sartén y dale la vuelta.
-
-Échala de nuevo para que cuaje por el otro lado.</p>
-
-<iframe src="https://www.youtube.com/embed/J1nTwC7esUA" title="video preparación de cómo hacer la tortilla de patatas"  ></iframe>
-
-  </div>
-
-
-<div id="lateral">
-  <h2 class="oculta">Redes sociales</h2>
-  <h3>Síguenos</h3>
-  <ul>
-    <li><a href="#">Twitter</a></li>
-    <li><a href="#">Youtube</a></li>
-    <li><a href="#">Facebook</a></li>
-  </ul>
-  <h2 class="oculta">Páginas amigas</h2>
-  <h3>Webs amigas</h3>
-  <ul>
-    <li><a href="#">El cocinillas</a></li>
-    <li><a href="#">Cocina para dummys</a></li>
-    <li><a href="#">Recetas en 4 min</a></li>
-  </ul>
+  <h3>Tortilla de la Abuela</h3>
+  <table summary="ingredientes de la tortilla">
+    <tr>
+      <td class="imagen" colspan="2"><img class="imagen2" src="tortilla_patata.jpg" alt="imagen tortilla de la abuela"></td>
+    </tr>
+    <tr>
+      <th>Ingredientes</th>
+      <th>Cantidad</th>
+    </tr>
+    <tr>
+      <td>Huevos</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Cebolla</td>
+      <td>1/2</td>
+    </tr>
+    <tr>
+      <td>Patatas</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Aceite de oliva</td>
+      <td>1 dl</td>
+    </tr>
+    <tr>
+      <td>Sal</td>
+      <td>A su gusto</td>
+    </tr>
+  </table>
+  <br>
+  <p>Pelar las patatas y cortarlas muy finas. Repetir la misma operación con la cebolla. Poner ambas a pochar en aceite y un poco de caldo, a fuego medio.
+  Batir los huevos en un bol y sazonar. Una vez que las patatas estén bien blanditas, sazonarlas y escurrirlas del aceite. Incorporarlas a los huevos batidos y mezclarlo todo bien.
+Aparte, en una sartén bien caliente, dorar la mezcla anterior por un lado y, luego, darle la vuelta. Retirar la tortilla de la sartén, manteniéndola jugosa.</p>
+<br>
+  <iframe src="https://www.youtube.com/embed/uc8Pwe7alJ8" title="video de la receta"></iframe>
 </div>
-
-
-
 <div id="pie">
-    <h2 class="oculta">Pie de la página con enlaces </h2>
-<ul>
-  <a href="http://www.w3.org/WAI/WCAG2AA-Conformance" title="Abre la página del nivel AA de conformidad. Todas las páginas del dominio han sido desarrolladas con las tecnologías XHTML 1.0, CSS 3.0 y Javascript 6.0, con fecha 23/1/2018 cumple las directrices 2.0 WCAG-WAI para obtener el nivel de conformidad Doble-A"><img src="http://www.w3.org/WAI/wcag2AA" alt="Icono de conformidad con el Nivel AA, de las Directrices de Accesibilidad para el Contenido Web 2.0 del W3C-WAI"/></a>
-
-  <!-- Aquí van los iconos de accesibilidad y la explicación sobre accesibilidad -->
-</ul>
+  <ul>
+    <a href="http://www.w3.org/WAI/WCAG2AA-Conformance" title="Abre la página del nivel AA de conformidad. Todas las páginas del dominio han sido desarrolladas con las tecnologías XHTML 1.0, CSS 3.0 y Javascript 6.0, con fecha 24/01/2018 cumple las directrices 2.0 WCAG-WAI para obtener el nivel de conformidad Doble-A"><img src="http://www.w3.org/WAI/wcag2AA" alt="Icono de conformidad con el Nivel AA, de las Directrices de Accesibilidad para el Contenido Web 2.0 del W3C-WAI"/></a>
+  </ul>
 </div>
 </body>
 </html>
